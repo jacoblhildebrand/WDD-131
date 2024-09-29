@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center; /* Center main titles */
+    background-color: white;
+    color: black;
 }
 
 header h1 {
@@ -16,6 +18,14 @@ header h1 {
 header h2 {
     color: #006EB6; /* Subtitle color */
     margin-top: 10px;
+}
+body.dark {
+    background-color: #333;
+    color: white; /* Dark theme styles */
+}
+
+body.dark h2 {
+    color: #9ACDFF;/* Lighter blue for better contrast on dark background */
 }
 
 main {
