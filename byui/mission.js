@@ -9,7 +9,7 @@ function changeTheme() {
     if (themeSelector.value === 'dark') {
         // Apply dark theme
         body.classList.add('dark');
-        logo.src = 'images/byui-logo_white.png'; // Change to white logo for dark theme
+        logo.src = 'images/byui-logo_white.webp'; // Change to white logo for dark theme
     } else {
         // Apply light theme
         body.classList.remove('dark');
