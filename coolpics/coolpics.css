@@ -37,7 +37,7 @@ header, footer {
 }
 
 a:link, a:visited {
-    color: var(--accent-color);
+    color: var(--text-light);
 }
 
 .gallery {
