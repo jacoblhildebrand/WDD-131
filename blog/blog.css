@@ -1,0 +1,131 @@
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #473144;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+header {
+    background-color: #AF1B3F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Lora, serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+nav {
+    background-color: #EFC69B;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav li {
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffffff; 
+    background-color: #AF1B3F; 
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    border-top: 1px solid #AF1B3F;
+    border-bottom: 1px solid #AF1B3F;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Articles on the left, filters on the right */
+    gap: 20px;
+    padding: 20px;
+}
+
+.articles {
+    display: grid;
+    gap: 20px; 
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Image on the left, content on the right */
+    gap: 10px;
+    background: #ffffff; 
+    padding: 20px;
+    border: 1px solid #EFC69B; 
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #473144; /* Footer color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    background-color: #EFC69B; 
+    color: #AF1B3F; 
+    padding: 10px;
+    transition: top 0.3s;
+}
+
+.skiptocontent a:focus {
+    top: 0; 
+}
