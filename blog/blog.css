@@ -99,6 +99,14 @@ article:hover {
     gap: 10px; 
 }
 
+.article-details {
+    text-align: right;
+    line-height: 1.5;
+    border-right: 1px solid #EFC69B;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
 img {
     max-width: 100%; 
     height: auto;
