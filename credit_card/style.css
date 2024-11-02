@@ -1,0 +1,140 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.credit-card-form {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    grid-template-areas:
+        "front"
+        "back"
+        "button";
+    position: relative;
+}
+
+.card {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-front {
+    grid-area: front;
+    z-index: 2;
+    background-color: #c0c0c0;
+    height: 175px;
+    width: 100%;
+    transform: translateY(100px) translateX(-125px);
+}
+
+.card-back {
+    position: relative;
+    background-color: #c0c0c0;
+    margin-top: -50px;
+    padding-top: 8px;
+    width: 100%;
+    height: 175px;
+}
+
+/* Position the CVV container on the right side */
+.cvv-container {
+    position: relative;
+    width: 60px;
+    transform: translateY(50%) translateX(400%); /* Center vertically */
+}
+
+.cvv-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.cvv-container input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #ff5722;
+}
+
+.total-amount {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card label {
+    display: grid;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card input {
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Expiration Date Styling */
+.card-details {
+    display: flex;
+    gap: 10px;
+}
+
+.expiration-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.expiration-inputs input {
+    width: 45px;
+}
+
+
+/* Back Card Styling */
+.black-strip {
+    height: 30px;
+    width: 102%;
+    background-color: #333;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    grid-area: button;
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    width: 125px;
+    height: 45px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: right;
+}
