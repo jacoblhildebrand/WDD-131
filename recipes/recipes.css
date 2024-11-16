@@ -132,9 +132,6 @@ article h3 a:hover {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    display: flex;
-    flex-direction: column; /* Default layout is vertical */
-    gap: 20px;
   }
 
   .recipe-content {
@@ -184,6 +181,8 @@ article h3 a:hover {
 footer {
     text-align: center;
     font-size: 0.875rem;
+    height: 4rem;
+    margin: 1rem;
 }
 
 .social img {
