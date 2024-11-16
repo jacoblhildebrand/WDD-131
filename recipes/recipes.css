@@ -141,7 +141,7 @@ article h3 a:hover {
     }
   
   .recipe-card img {
-    width: 100%;
+    width: 300px;
     height: auto;
     border-bottom: 1px solid #ddd;
   }
@@ -205,6 +205,12 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+
     }
     
 }
