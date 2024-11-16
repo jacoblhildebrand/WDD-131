@@ -1,20 +1,20 @@
 import recipes from './recipes.mjs';
 
-// Get the container where the recipe cards will be inserted
+// Get container where recipe cards will be inserted
 const recipeList = document.getElementById("recipe-list");
 
 // Function to generate and display recipe cards
 function displayRecipes() {
-    // Clear any existing content in the container
+    // Clear any existing content in container
     recipeList.innerHTML = '';
 
     // Loop through each recipe and create a card
     recipes.forEach(recipe => {
-        // Create a div element to hold the recipe card
+        // Create a div element to hold recipe card
         const recipeCard = document.createElement("div");
         recipeCard.classList.add("recipe-card");
 
-        // Insert recipe data into the card
+        // Insert recipe data into card
         recipeCard.innerHTML = `
             <h3>${recipe.name}</h3>
             <img src="${recipe.image}" alt="${recipe.name}">
@@ -22,7 +22,7 @@ function displayRecipes() {
             <p>Rating: ${getRatingStars(recipe.rating)}</p>
         `;
 
-        // Append the recipe card to the container
+        // Append recipe card to container
         recipeList.appendChild(recipeCard);
     });
 }
@@ -40,5 +40,5 @@ function getRatingStars(rating) {
     return stars;
 }
 
-// Call the function to display recipes when the page loads
+// Call function to display recipes when page loads
 window.addEventListener('DOMContentLoaded', displayRecipes);
