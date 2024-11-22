@@ -63,6 +63,7 @@ form {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 form input[type="text"] {
@@ -82,7 +83,7 @@ form button {
     cursor: pointer;
 }
 
-article {
+section {
     border: 1px solid var(--text-dark);
     border-radius: 0.5rem;
     padding: 1rem;
@@ -92,7 +93,7 @@ article {
     gap: 1rem;
 }
 
-article img {
+section img {
     border-radius: 0.5rem;
 }
 
@@ -107,14 +108,14 @@ article img {
     display: inline-block;
 }
 
-article h3 a {
+section h3 a {
     font-size: 1.5rem;
     font-family: var(--secondary-font);
     color: var(--primary-color);
     text-decoration: none;
 }
 
-article h3 a:hover {
+section h3 a:hover {
     text-decoration: underline;
 }
 
@@ -141,14 +142,10 @@ article h3 a:hover {
     }
   
   .recipe-card img {
-    width: 300px;
+    width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
   }
-
-  .description {
-    display: block;
-}
   
   .recipe-card h3 {
     font-size: 1.5rem;

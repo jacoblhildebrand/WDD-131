@@ -4,6 +4,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link rel="preload" href="recipes.css" as="style">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A collection of recipes for every taste">
@@ -13,34 +14,29 @@
     <meta property="og:image" content="images/recipe-book.png">
     <meta property="og:url" content="http://example.com/recipes">
     <meta name="twitter:card" content="summary_large_image">
+    
     <link rel="stylesheet" href="recipes.css">
+    
     <title>Recipe Book</title>
 </head>
 <body>
     <header>
         <img src="images/recipe-book.png" alt="Recipe Book Logo">
         <h1>RecipeBook</h1>
-        
+        <form role="search" id="search-form">
+            <label for="search">Search Recipes:</label>
+            <input type="text" id="search-input" name="search" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </form>
     </header>
     <main>
-        <section>
-            <form role="search" id="search-form">
-                <label for="search">Search Recipes:</label>
-                <input type="text" id="search" name="search" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
-            <article>
-                
-                <div id="recipe-list">
-                    <div class="recipe-content">
-                        <img src="image.jpg" alt="Recipe">
-                        <div class="description">
-                        </div>
-                    </div>
-                </div> 
-                <div class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                   </div>
-            </article>
+
+        <section id="recipes-section">
+            <h2>Recipes</h2>
+
+            <div id="recipe-container">
+
+            </div>
         </section>
     </main>
     <footer>
@@ -58,3 +54,4 @@
     <script src="main.js" type="module" defer></script>
 </body>
 </html>
+

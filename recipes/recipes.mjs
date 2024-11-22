@@ -1,4 +1,4 @@
-const recipes = [
+export const recipes = [
 	{
 		author: 'Provo High Culinary Students',
 		url: '',
@@ -8,7 +8,7 @@ const recipes = [
 		tags: ['Waffles', 'Sweet Potato', 'Side'],
 		description: 'Savory waffles made with Sweet potato with a hint of Ginger',
 		image: './images/sweet-potato-waffle-md.jpg',
-		recipeIngredient: [
+		ingredients: [
 			'2 separated eggs',
 			'1/4 C Oil',
 			'1/4 tsp salt',
@@ -44,7 +44,7 @@ const recipes = [
 		description:
 			'Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully',
 		image: './images/escalopes-de-poulet-a-la-creme.webp',
-		recipeIngredient: [
+		ingredients: [
 			'2 Chicken Tenders, Cubed',
 			'4 Mushrooms, Sliced',
 			'1/2 C Whipping Cream',
@@ -76,7 +76,7 @@ const recipes = [
 		description:
 			'Easy and delicious oven roasted potatoes that go great with almost anything.',
 		image: './images/roasted-potatoes.webp',
-		recipeIngredient: [
+		ingredients: [
 			'3-4 Medium Potatoes',
 			'1 Tbsp Olive oil',
 			'2 tsp Italian Seasoning',
@@ -106,7 +106,7 @@ const recipes = [
 		description:
 			'Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.',
 		image: './images/black-beans-and-rice.jpg',
-		recipeIngredient: [
+		ingredients: [
 			'1 Medium Onion, diced',
 			'2 Cloves Garlic, minced',
 			'1 Tbsp Olive oil',
@@ -139,7 +139,7 @@ const recipes = [
 		description:
 			'Quick and easy Chicken curry recipe made with easy to find ingredients.',
 		image: './images/chicken-curry.webp',
-		recipeIngredient: [
+		ingredients: [
 			'4 Slices Bacon',
 			'1 clove Garlic',
 			'2 Tbsp Flour',
@@ -176,7 +176,7 @@ const recipes = [
 		tags: ['dessert'],
 		description: 'Delicious soft chocolate chip cookies with coconut.',
 		image: './images/chocolate-chip-cookies.jpg',
-		recipeIngredient: [
+		ingredients: [
 			'1 Lb butter, softened',
 			'1 C white sugar',
 			'3 Eggs',
@@ -211,7 +211,7 @@ const recipes = [
 		description:
 			"This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!",
 		image: './images/german-gooseberry-cake.jpg',
-		recipeIngredient: [
+		ingredients: [
 			'For the Cake Base:',
 			'180 g (1 ½ cups/ 6.3 oz) plain flour',
 			'2 medium eggs',
@@ -254,7 +254,7 @@ const recipes = [
 		description:
 			"This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
 		image: './images/apple-crisp.jpg',
-		recipeIngredient: [
+		ingredients: [
 			'10 C apples, cored and sliced',
 			'1 C white sugar',
 			'1 Tbsp white flour',
