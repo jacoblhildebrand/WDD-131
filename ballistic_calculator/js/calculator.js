@@ -57,9 +57,9 @@ document.getElementById('ballistics-form').addEventListener('submit', function(e
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
         <h3>Calculation Results</h3>
-        <p>Bullet Drop at ${distance} feet: ${drop.toFixed(2)} inches</p>
+        <p>Bullet Drop at ${distance} yards: ${drop.toFixed(2)} inches</p>
         <p>Impact Energy: ${energy.toFixed(2)} foot-pounds</p>
-        <p>Wind Drift at ${distance} feet: ${drift.toFixed(2)} inches</p>
+        <p>Wind Drift at ${distance} yards: ${drift.toFixed(2)} inches</p>
         <p>Stability Factor: ${stability.toFixed(2)}</p>
     `;
 });
