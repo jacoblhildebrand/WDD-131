@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/designer.webp" alt="Ballistic Calculator Logo">
+            </a>
+            <h1>Ballistics Calculator</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Calculate Your Ballistics</h2>
+            <form id="ballistics-form">
+                <label for="bullet-weight">Bullet Weight (grains):</label>
+                <input type="number" id="bullet-weight" name="bullet-weight" step="any" required>
+
+                <label for="muzzle-velocity">Muzzle Velocity (fps):</label>
+                <input type="number" id="muzzle-velocity" name="muzzle-velocity" step="any" required>
+
+                <label for="distance">Distance to Target (yards):</label>
+                <input type="number" id="distance" name="distance" step="any" required>
+
+                <label for="wind-speed">Wind Speed (mph):</label>
+                <input type="number" id="wind-speed" name="wind-speed" step="any">
+
+                <label for="ballistic-coefficient">Ballistic Coefficient:</label>
+                <input type="number" id="ballistic-coefficient" name="ballistic-coefficient" step="any" required>
+
+                <label for="barrel-twist-rate">Barrel Twist Rate (inches per revolution):</label>
+                <input type="number" id="barrel-twist-rate" name="barrel-twist-rate" step="any" required>
+
+                <label for="bullet-length">Bullet Length (inches):</label>
+                <input type="number" id="bullet-length" name="bullet-length" step="any" required>
+
+                <label for="bullet-diameter">Bullet Diameter (inches):</label>
+                <input type="number" id="bullet-diameter" name="bullet-diameter" step="any" required>
+
+                <button type="submit">Calculate</button>
+ 
+            </form>
+            <div id="results">
+                <!-- Results will be displayed here dynamically -->
+            </div>
+
+            <p>An Accuracy International long range sniper rifle in a custom chassis chambered in 6mm GT (6GT) kitted out for precision rifle competition. This rifle is used for long range shooting at distances up to 1500+ yards.</p>      
+
+            <img src="images/rex-allen-bf9h7pLKGo0-unsplash-edit.webp" alt="Image of am Accuracy International Precision Rifle chambered in 6 millimeter GT for precision rifle competitions">
+            <p>Photo by <a href="https://unsplash.com/@stokeship?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rex Allen</a> on <a href="https://unsplash.com/photos/a-rifle-mounted-to-a-wooden-post-in-front-of-tall-grass-bf9h7pLKGo0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ballistics Calculator</p>
+    </footer>
+
+    <script src="js/calculator.js" type="module"></script>
+</body>
+</html>
